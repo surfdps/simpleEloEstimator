@@ -1,0 +1,4 @@
+python-chess==1.999
+requests==2.32.5
+colorama==0.4.6
+tqdm==4.66.1
