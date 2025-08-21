@@ -15,7 +15,7 @@ DEPTH = 15
 
 print(f"{Fore.CYAN}Fetching latest game from Lichess...{Style.RESET_ALL}")
 # Fetch latest game
-url = f"https://lichess.org/api/games/user/{LICHESS_USERNAME}?max=1&analysed=false&moves=true&pgnInJson=false"
+url = f"https://lichess.org/api/games/user/{LICHESS_USERNAME}?max=1&moves=true&pgnInJson=false"
 headers = {"Accept": "application/x-chess-pgn"}
 pgn_data = requests.get(url, headers=headers).text
 
